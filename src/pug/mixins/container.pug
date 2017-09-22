@@ -1,0 +1,22 @@
+mixin container()
+    section.container
+        .person
+            img.person__photo(src="images/man.jpg", alt="person")
+            .person__data
+                .person__main-data
+                    .person__name Max Jones
+                        .person__status gold
+                    .person__prof Sales & Marketing
+                .person__contact-data
+                    .person__phone Phone
+                        a.person__contact-link(href="#") (+31) 140 175 468
+                    .person__address Address
+                        a.person__contact-link(href="#") Binnenweg 50, Rotterdam
+                    .btn.btn--quote create quote
+        menu.someElsePersonData
+            li.someElsePersonData__item.someElsePersonData__item--active
+                a(href="#") Overview
+            li.someElsePersonData__item
+                a(href="#") Orders
+            li.someElsePersonData__item
+                a(href="#") Payments

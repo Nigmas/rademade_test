@@ -1,0 +1,15 @@
+mixin topbar()
+    section.topbar
+        menu.breadcrumbs
+            li.breadcrumbs__item 
+                a(href="#") Customers
+            li.breadcrumbs__item Max Jones
+        .search.search--topbar
+            input.search__input(type="text" placeholder="SEARCH")
+            span.search__btn
+        .calls
+            i.fa.fa-bell
+            .calls__count 4
+        .welcome
+            img.welcome__avatar(src="images/avatar.jpg", alt="avatar")
+            .welcome__text Hello Lauren

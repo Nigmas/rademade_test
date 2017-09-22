@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.content {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	width: 100%;
+	padding: 0 15px 0 40px;
+}
+
+.someElse {
+	width: calc(100% + 55px);
+	height: 100%;
+	background-color: $color-gray;
+	margin: 0 -15px 0 -40px;
+	padding: 0;
+}

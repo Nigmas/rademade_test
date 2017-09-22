@@ -1,0 +1,18 @@
+extends pug/base
+
+append vars
+	- html.classList.push('page-index')
+
+include pug/mixins/sidebar
+include pug/mixins/topbar
+include pug/mixins/container
+
+block content
+		.wrapper
+			+sidebar()
+
+			.content
+				+topbar()
+				+container()
+
+				.someElse
